@@ -1,43 +1,45 @@
 # Namaste Food Delivery
 
-A food‑ordering web app built while following the **[Namaste React](https://namastedev.com/learn/namaste-react)** course by Akshay Saini ([NamasteDev](https://namastedev.com/)).
+A food-ordering app I'm rebuilding while working back through Akshay Saini's
+**[Namaste React](https://namastedev.com/learn/namaste-react)** course — mostly to
+knock the rust off the fundamentals and see what's changed in the ecosystem since
+I last set a project up from scratch.
 
-This repository is coursework — the code is written step by step alongside the lessons to learn React from the ground up: components, JSX, hooks, state management, routing, class components, custom hooks, performance optimization, and building a scalable frontend architecture.
+Tracking the course chapter by chapter: JSX and rendering, component composition,
+hooks, config-driven data, routing, class components, context, and the
+performance/optimization passes toward the end.
 
-## Tech stack
+## Stack
 
-- **React 19**
-- **Vite** — dev server and build tooling, with HMR
-- **React Compiler** — enabled via `babel-plugin-react-compiler`
-- **ESLint** — linting (flat config)
-- **Prettier** — code formatting
+- React 19
+- Vite (+ HMR)
+- React Compiler via `babel-plugin-react-compiler`
+- ESLint (flat config) + Prettier
 
-## Getting started
+## Running it
 
 ```bash
 npm install
 npm run dev
 ```
 
-The app runs at the URL Vite prints (default `http://localhost:5173`).
-
 ## Scripts
 
-| Command                | Description                              |
-| ---------------------- | ---------------------------------------- |
-| `npm run dev`          | Start the Vite dev server with HMR       |
-| `npm run build`        | Build for production into `dist/`        |
-| `npm run preview`      | Preview the production build locally     |
-| `npm run lint`         | Run ESLint over the project              |
-| `npm run format`       | Format all files with Prettier           |
-| `npm run format:check` | Check formatting without writing changes |
+| Command                | Does                        |
+| ---------------------- | --------------------------- |
+| `npm run dev`          | Dev server with HMR         |
+| `npm run build`        | Production build to `dist/` |
+| `npm run preview`      | Serve the production build  |
+| `npm run lint`         | ESLint                      |
+| `npm run format`       | Prettier write              |
+| `npm run format:check` | Prettier check (CI)         |
 
-## Code style
+## Notes to self
 
-Formatting is handled by Prettier (config in `.prettierrc.json`); ESLint defers all
-formatting concerns to it via `eslint-config-prettier`. Run `npm run format` before
-committing.
+- Prettier owns formatting; `eslint-config-prettier` is last in the flat config so
+  ESLint stays out of its way. Run `npm run format` before committing.
+- Config lives in `.prettierrc.json` — defaults plus single quotes.
 
-## Acknowledgements
+---
 
-Course and curriculum by [Akshay Saini](https://namastedev.com/) — Namaste React.
+Course by [Akshay Saini](https://namastedev.com/).
