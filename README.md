@@ -1,19 +1,43 @@
-# React + Vite
+# Namaste Food Delivery
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A food‑ordering web app built while following the **[Namaste React](https://namastedev.com/learn/namaste-react)** course by Akshay Saini ([NamasteDev](https://namastedev.com/)).
 
-Currently, two official plugins are available:
+This repository is coursework — the code is written step by step alongside the lessons to learn React from the ground up: components, JSX, hooks, state management, routing, class components, custom hooks, performance optimization, and building a scalable frontend architecture.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech stack
 
-## React Compiler
+- **React 19**
+- **Vite** — dev server and build tooling, with HMR
+- **React Compiler** — enabled via `babel-plugin-react-compiler`
+- **ESLint** — linting (flat config)
+- **Prettier** — code formatting
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## Getting started
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+```bash
+npm install
+npm run dev
+```
 
-## Expanding the ESLint configuration
+The app runs at the URL Vite prints (default `http://localhost:5173`).
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Scripts
+
+| Command                | Description                              |
+| ---------------------- | ---------------------------------------- |
+| `npm run dev`          | Start the Vite dev server with HMR       |
+| `npm run build`        | Build for production into `dist/`        |
+| `npm run preview`      | Preview the production build locally     |
+| `npm run lint`         | Run ESLint over the project              |
+| `npm run format`       | Format all files with Prettier           |
+| `npm run format:check` | Check formatting without writing changes |
+
+## Code style
+
+Formatting is handled by Prettier (config in `.prettierrc.json`); ESLint defers all
+formatting concerns to it via `eslint-config-prettier`. Run `npm run format` before
+committing.
+
+## Acknowledgements
+
+Course and curriculum by [Akshay Saini](https://namastedev.com/) — Namaste React.
