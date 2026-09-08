@@ -1,0 +1,13 @@
+# Build output
+dist
+dist-ssr
+
+# Dependencies
+node_modules
+
+# Lockfiles
+package-lock.json
+
+# Misc
+*.local
+coverage
